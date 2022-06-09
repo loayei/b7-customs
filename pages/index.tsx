@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Masthead from "../components/masthead";
+import AboutUs from "../components/about";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
 
       <div className="text-9xl font-bold"></div>
       <Masthead />
+      <AboutUs />
 
       <footer className={styles.footer}>
         <a
