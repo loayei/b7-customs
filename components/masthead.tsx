@@ -33,6 +33,7 @@ const Masthead: React.FC = () => {
         className="absolute w-full h-full object-cover"
       >
         <source src="/assets/car.webm" type="video/webm; codecs=vp9" />
+        <source src="/assets/car.m4v" type="video/mp4; codecs=hvc1" />
       </video>
       <div
         className={`flex-grow-0 pt-10 transition-opacity duration-1000 ${
