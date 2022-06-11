@@ -26,10 +26,10 @@ const Services = () => (
             </ServiceLeft>
             <ServiceRight progress={progress}>
               <Image
-                src="/assets/tint.gif"
+                src="/assets/tint.jpeg"
                 layout="responsive"
                 width={1620}
-                height={840}
+                height={750}
                 alt="Loayei"
               />
             </ServiceRight>
@@ -50,10 +50,10 @@ const Services = () => (
             </ServiceLeft>
             <ServiceRight progress={progress}>
               <Image
-                src="/assets/tint.gif"
+                src="/assets/tint.jpeg"
                 layout="responsive"
                 width={1620}
-                height={840}
+                height={750}
                 alt="Loayei"
               />
             </ServiceRight>
@@ -74,10 +74,10 @@ const Services = () => (
             </ServiceLeft>
             <ServiceRight progress={progress}>
               <Image
-                src="/assets/tint.gif"
+                src="/assets/tint.jpeg"
                 layout="responsive"
                 width={1620}
-                height={840}
+                height={750}
                 alt="Loayei"
               />
             </ServiceRight>
