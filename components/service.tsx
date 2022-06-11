@@ -48,7 +48,7 @@ export const ServiceRight: React.FC<{
         transform: `translateY(${translateY}px)`,
       }}
     >
-      <div className="w-full max-w-lg lg:px-0 px-5 md:px-0 border-8 border-red-700">
+      <div className="w-full max-w-md pt-10 lg:pt-0 px-10 md:px-0">
         {children}
       </div>
     </div>
