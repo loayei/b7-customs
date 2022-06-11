@@ -4,6 +4,7 @@ import Image from "next/image";
 import Masthead from "../components/masthead";
 import AboutUs from "../components/about";
 import Statement from "../components/statement";
+import Services from "../components/services";
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +17,8 @@ const Home: NextPage = () => {
       <Masthead />
       <AboutUs />
       <Statement />
-      <Statement />
+      <Services />
+      <AboutUs />
     </div>
   );
 };
