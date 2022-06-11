@@ -1,9 +1,11 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
 
+type props = {
+  children: React.ReactNode;
+};
 
-
-export const ServiceContainer: React.FC = ({ children }: any) => (
+export const ServiceContainer: React.FC<props> = ({ children }) => (
   <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
     {children}
   </div>
@@ -17,8 +19,9 @@ export const ServiceBackground: React.FC = () => (
 );
 
 export const ServiceLeft: React.FC<{
-  progress: number;
-}> = ({ children, progress }: any) => {
+  progress: number,
+  children: React.ReactNode
+}> = ({ children, progress }) => {
   let translateY = Math.max(0, 50 - progress * 3 * 50);
   if (progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50);
   return (
@@ -34,8 +37,9 @@ export const ServiceLeft: React.FC<{
 };
 
 export const ServiceRight: React.FC<{
-  progress: number;
-}> = ({ children, progress }: any) => {
+  progress: number,
+  children: React.ReactNode
+}> = ({ children, progress }) => {
   let translateY = Math.max(-50, -(progress - 0.5) * 50);
   return (
     <div
