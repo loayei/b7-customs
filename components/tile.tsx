@@ -3,7 +3,6 @@ import { ScrollContext } from "../utilities/scroll";
 
 interface WrapperProps {
   numOfPages: number;
-  children: React.ReactNode;
 }
 
 interface TileContextValue {
@@ -13,15 +12,16 @@ interface TileContextValue {
 
 export const TileContext = React.createContext<TileContextValue>({
   numOfPages: 0,
-  currentPage: 0,
+  currentPage: 0
 });
 
 export const TileWrapper: React.FC<WrapperProps> = ({
-  numOfPages,
   children,
+  numOfPages,
 }) => {
-  const { scrollY } = useContext(ScrollContext);
   const refContainer = useRef<HTMLDivElement>(null);
+  const { scrollY } = useContext(ScrollContext);
+
 
   let currentPage = 0;
 
@@ -44,7 +44,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
         ref={refContainer}
         className="relative bg-black text-white"
         style={{
-          height: numOfPages * 100 + "vh",
+          height: numOfPages * 80 + "vh",
         }}
       >
         {children}
@@ -52,14 +52,12 @@ export const TileWrapper: React.FC<WrapperProps> = ({
     </TileContext.Provider>
   );
 };
-type Prop = {
-  children: React.ReactNode;
-};
-export const TileBackground: React.FC<Prop> = ({ children }) => (
+
+export const TileBackground: React.FC = ({ children }) => (
   <div className="absolute h-full w-full">{children}</div>
 );
 
-export const TileContent: React.FC<Prop> = ({ children }) => (
+export const TileContent: React.FC = ({ children }) => (
   <div className="sticky top-0 h-screen overflow-hidden">{children}</div>
 );
 
@@ -70,21 +68,21 @@ interface Props {
 
 export const Tile: React.FC<Props> = ({ page, renderContent }) => {
   const { currentPage, numOfPages } = useContext(TileContext);
-  let progress = Math.max(0, currentPage - page);
+  const progress = Math.max(0, currentPage - page);
   const refContainer = useRef<HTMLDivElement>(null);
 
   let opacity = Math.min(1, Math.max(0, progress * 4));
   if (progress > 0.85 && page < numOfPages - 1) {
-    opacity = Math.max(0, (1.0 - progress) * 4);
+    opacity = Math.max(0, (1 - progress) * 4);
   }
 
   return (
     <div
       ref={refContainer}
-      className="absoute top-0 w-full"
+      className="absolute top-0 w-full"
       style={{
         pointerEvents: progress >= 0 || progress >= 1 ? "none" : undefined,
-        opacity,
+        opacity
       }}
     >
       {renderContent({ progress })}

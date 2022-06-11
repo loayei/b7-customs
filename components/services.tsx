@@ -36,8 +36,6 @@ const Services = () => (
           </ServiceContainer>
         )}
       ></Tile>
-    </TileContent>
-    <TileContent>
       <Tile
         page={1}
         renderContent={({ progress }) => (
