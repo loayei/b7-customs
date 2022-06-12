@@ -5,6 +5,7 @@ import Masthead from "../components/masthead";
 import AboutUs from "../components/about";
 import Statement from "../components/statement";
 import Services from "../components/services";
+import Partners from "../components/partners";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <AboutUs />
       <Statement />
       <Services />
+      <Partners />
     </div>
   );
 };
