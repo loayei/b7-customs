@@ -13,7 +13,7 @@ interface TileContextValue {
 
 export const TileContext = React.createContext<TileContextValue>({
   numOfPages: 0,
-  currentPage: 0
+  currentPage: 0,
 });
 
 export const TileWrapper: React.FC<WrapperProps> = ({
@@ -22,7 +22,6 @@ export const TileWrapper: React.FC<WrapperProps> = ({
 }) => {
   const refContainer = useRef<HTMLDivElement>(null);
   const { scrollY } = useContext(ScrollContext);
-
 
   let currentPage = 0;
 
@@ -86,7 +85,7 @@ export const Tile: React.FC<Props> = ({ page, renderContent }) => {
       className="absolute top-0 w-full"
       style={{
         pointerEvents: progress >= 0 || progress >= 1 ? "none" : undefined,
-        opacity
+        opacity,
       }}
     >
       {renderContent({ progress })}
