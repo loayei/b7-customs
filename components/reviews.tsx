@@ -31,6 +31,22 @@ const Reviews: React.FC = () => {
                     Amazing job done on my car Mohd !! Love the new spoiler and the louvers!! Coming back for more😇😇😇😇😇
                 </Review>
             </CarouselItem>
+            <CarouselItem index={4}>
+                <Review by="Justin C (⭐⭐⭐⭐⭐)">
+                    These guys were awesome throughout the quoting and scheduling process. Responded after hours at ease. Honest - Responsive - Highly recommend.
+                    Thanks again guys!!
+                </Review>
+            </CarouselItem>
+            <CarouselItem index={5}>
+                <Review by="Steve S (⭐⭐⭐⭐⭐)">
+                    Thank you to B7 Customs for the Tint & tail lights. Service was amazing and treated me like family. Definitely Recommend Them & I See Myself Coming Here Again.
+                </Review>
+            </CarouselItem>
+            <CarouselItem index={6}>
+                <Review by="Alec A. (⭐⭐⭐⭐⭐)">
+                    Shout out to these guys , they know what they're doing. Came in for a chrome delete and it was turned around the same day . Thank you Mo & MJ ! Will definitely be doing more business with you guys in the future.
+                </Review>
+            </CarouselItem>
         </Carousel>
     )
 }
