@@ -58,7 +58,7 @@ interface ItemProps {
 export const SliderItem: React.FC<ItemProps> = ({ children, width }) => {
   return (
     <div
-      className="inline-flex justify0center items-center mx-4"
+      className="inline-flex justify-center items-center mx-4"
       style={{ width }}
     >
       {children}

@@ -70,7 +70,7 @@ const Logos: React.FC = () => (
       </SliderItem>
       <SliderItem width={150}>
         <Image
-          src="/assets/akrapovic.png"
+          src="/assets/renegade.webp"
           width={150}
           height={50}
           alt="Logo"
@@ -79,7 +79,25 @@ const Logos: React.FC = () => (
       </SliderItem>
       <SliderItem width={150}>
         <Image
-          src="/assets/renegade.webp"
+          src="/assets/aerotect.webp"
+          width={150}
+          height={50}
+          alt="Logo"
+          objectFit="contain"
+        />
+      </SliderItem>
+      <SliderItem width={150}>
+        <Image
+          src="/assets/jcr.png"
+          width={150}
+          height={50}
+          alt="Logo"
+          objectFit="contain"
+        />
+      </SliderItem>
+      <SliderItem width={150}>
+        <Image
+          src="/assets/mclogan.png"
           width={150}
           height={50}
           alt="Logo"

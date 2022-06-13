@@ -19,7 +19,7 @@ export const CarouselContext = React.createContext<ContextValue>({
     selectedIndex: -1
 })
 
-const Carousel: React.FC<Props> = ({ className, children }) => {
+const Carousel: React.FC<Props> = ({ children, className }) => {
     const [selectedIndex, setSelectedIndex] = useState(0)
     const [viewportRef, emblaApi] = useEmblaCarousel({
         loop: true,
@@ -41,8 +41,8 @@ const Carousel: React.FC<Props> = ({ className, children }) => {
 
     return (
         <CarouselContext.Provider value={{ embla: emblaApi, selectedIndex }}>
-            <div ref={viewportRef} className={`${styles.viewport}w-full overflow-hidden ${className}`}>
-                <div className={`${styles.container}flex`}>
+            <div ref={viewportRef} className={`${styles.viewport} w-full overflow-hidden ${className}`}>
+                <div className={`${styles.container} flex`}>
                     {children}
                 </div>
             </div>
