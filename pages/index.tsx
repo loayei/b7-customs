@@ -6,6 +6,8 @@ import AboutUs from "../components/about";
 import Statement from "../components/statement";
 import Services from "../components/services";
 import Partners from "../components/partners";
+import Contact from "../components/contact";
+import Footer from "../components/footer";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +22,8 @@ const Home: NextPage = () => {
       <Statement />
       <Services />
       <Partners />
+      <Contact />
+      <Footer />
     </div>
   );
 };

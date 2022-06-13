@@ -1,10 +1,11 @@
 import React from "react";
 import Logos from "./logos";
 import Reviews from "./reviews";
+import s from "../styles/partners.module.css";
 
 const Partners: React.FC = () => {
   return (
-    <section className="bg-white min-h-screen flex flex-col justify-center gap-16 md:gap-32">
+    <section className={`bg-white min-h-screen flex flex-col justify-center gap-16 md:gap-32 ${s.bg}`}>
       \
       <div className="flex flex-col justify-center items-center">
         <h3 className="text-xl mb-10 font-bold text-center">
