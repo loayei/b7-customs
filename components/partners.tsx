@@ -17,7 +17,7 @@ const Partners: React.FC = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="container mx-auto lg:max-w-[70%] lg:px-10">
           <h3 className="text-3xl lg:text-4xl tracking-tight text-center px-10 !leading-[3.5rem]">
-            Don't Just Take It From Us, <br /> <span className="text-2xl"> See What Our Customers Say About Us </span>
+            Don&apos;t Just Take It From Us, <br /> <span className="text-2xl"> See What Our Customers Say About Us </span>
           </h3>
         </div>
       </div>

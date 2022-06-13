@@ -9,7 +9,7 @@ const Reviews: React.FC = () => {
             <CarouselItem index={0}>
                 <Review by="Saina Ahadi (⭐⭐⭐⭐⭐)">
                     I got my windows tinted here and by far the best service
-                    I've had out of all the shops I've been to.
+                    I&apos;ve had out of all the shops I&apos;ve been to.
                     Staff was super friendly and helpful,
                     They were so quick and finished before the time stated,
                     and prices are reasonable especially for their speed and quality!
@@ -44,7 +44,7 @@ const Reviews: React.FC = () => {
             </CarouselItem>
             <CarouselItem index={6}>
                 <Review by="Alec A. (⭐⭐⭐⭐⭐)">
-                    Shout out to these guys , they know what they're doing. Came in for a chrome delete and it was turned around the same day . Thank you Mo & MJ ! Will definitely be doing more business with you guys in the future.
+                    Shout out to these guys , they know what they&apos;re doing. Came in for a chrome delete and it was turned around the same day . Thank you Mo & MJ ! Will definitely be doing more business with you guys in the future.
                 </Review>
             </CarouselItem>
         </Carousel>
