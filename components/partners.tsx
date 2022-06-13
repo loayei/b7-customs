@@ -1,5 +1,6 @@
 import React from "react";
 import Logos from "./logos";
+import Reviews from "./reviews";
 
 const Partners: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const Partners: React.FC = () => {
           </h3>
         </div>
       </div>
-      <div>Reviews</div>
+      <Reviews />
       <div className="flex-1 bg-black"></div>
     </section>
   );
