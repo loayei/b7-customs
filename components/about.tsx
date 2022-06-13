@@ -25,12 +25,7 @@ const AboutUs: React.FC = () => {
             socialId=""
             link="https://twitter.com/moe"
           />
-          <Engineer
-            id="g"
-            name="G"
-            socialId=""
-            link="https://twitter.com/g"
-          />
+          <Engineer id="g" name="G" socialId="" link="https://twitter.com/g" />
         </div>
       </div>
     </section>

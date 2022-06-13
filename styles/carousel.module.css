@@ -8,16 +8,16 @@
 }
 
 .container {
-    user-select: none;
+  user-select: none;
 }
 
 .slide {
-    flex: 0 0 auto;
-    max-width: min(70%, 620px);
-    opacity: 0.4;
-    transition: opacity 0.4s;
+  flex: 0 0 auto;
+  max-width: min(70%, 620px);
+  opacity: 0.4;
+  transition: opacity 0.4s;
 }
 
 .slide:global(.active) {
-    opacity: 1;
+  opacity: 1;
 }
