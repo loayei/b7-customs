@@ -16,6 +16,7 @@ const Engineer: React.FC<Props> = ({ id, name, socialId, link }) => (
       alt={name}
       width={1555}
       height={1555}
+      className="rounded-full"
     />
     <div className="text-2xl xl:text-3xl">{name}</div>
     <div className="text-xl">

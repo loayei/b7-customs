@@ -12,23 +12,23 @@ const AboutUs: React.FC = () => {
       </div>
       <div className="container mx-auto px-11 text-center mt-28">
         <h2>&ldquo;The Specialists&rdquo;</h2>
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-20">
           <Engineer
             id="loai"
             name="Loai"
-            socialId="@loai"
-            link="https://twitter.com/loai"
+            socialId="@loayei"
+            link="https://instagram.com/loayei"
           />
           <Engineer
             id="moe"
             name="Moe"
-            socialId="@moe"
+            socialId=""
             link="https://twitter.com/moe"
           />
           <Engineer
             id="g"
             name="G"
-            socialId="@g"
+            socialId=""
             link="https://twitter.com/g"
           />
         </div>
