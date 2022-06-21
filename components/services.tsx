@@ -29,7 +29,7 @@ const Services = () => (
             </ServiceLeft>
             <ServiceRight progress={progress}>
               <Image
-                src="/assets/test.jpg"
+                src="/assets/test.JPG"
                 layout="responsive"
                 width={500}
                 height={400}
